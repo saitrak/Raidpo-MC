@@ -597,13 +597,13 @@
 
     <!-- Stuff Grid -->
     <section id="stuff" class="stuff-grid">
-      <!-- Actions and Stuff 1.5 -->
+      <!-- Actions and Stuff -->
       <div class="stuff-card" data-section="addon">
-        <img src="https://tse1.mm.bing.net/th/id/OIP.EAfS41MqsW3eZhKAaM4fygAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Actions and Stuff 1.5" class="stuff-icon">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.EAfS41MqsW3eZhKAaM4fygAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Actions and Stuff" class="stuff-icon">
         <span class="section-badge">Addon</span>
-        <h3>Actions and Stuff 1.5</h3>
+        <h3>Actions and Stuff</h3>
         <p>Exciting addon for Minecraft Bedrock Edition, designed to enhance gameplay with new animations, character actions, and fun visual effects.</p>
-        <a href='/action-and-stuff-1.5'>Get Stuff</a>
+        <a href='/action-and-stuff'>Get Stuff</a>
       </div>
       
       <!-- More stuff can be added here following the same pattern -->
@@ -697,13 +697,13 @@
   <script>
     // Firebase Configuration
     const firebaseConfig = {
-      apiKey: "AIzaSyBnXZuupUuEU-YQINri3isg_k2av1p4bHY",
-      authDomain: "raidpo-ai-3c84b.firebaseapp.com",
-      projectId: "raidpo-ai-3c84b",
-      storageBucket: "raidpo-ai-3c84b.firebasestorage.app",
-      messagingSenderId: "41213161184",
-      appId: "1:41213161184:web:58604fc48f2c026f5aaa85",
-      measurementId: "G-7MBZHVFCZR"
+      apiKey: "AIzaSyB86ircaxVp-LtyPzo_PN9iWNNGzyf2jx4",
+      authDomain: "raidpo-mc.firebaseapp.com",
+      projectId: "raidpo-mc",
+      storageBucket: "raidpo-mc.firebasestorage.app",
+      messagingSenderId: "995790427239",
+      appId: "1:995790427239:web:9930f50364885b8e4cb0c2",
+      measurementId: "G-T1XZYGT9RJ"
     };
 
     // Initialize Firebase
@@ -858,19 +858,6 @@
       } else {
         alert('Please enter your full name');
       }
-    });
-
-    // Track stuff downloads
-    stuffLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        if (!auth.currentUser) {
-          e.preventDefault();
-          window.location.href = 'https://raidpo-ai.netlify.app/login-form';
-        } else {
-          stuffDownloadedCount++;
-          stuffDownloaded.textContent = stuffDownloadedCount;
-        }
-      });
     });
 
     // Check Auth State
